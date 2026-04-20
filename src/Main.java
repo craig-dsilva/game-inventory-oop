@@ -3,11 +3,13 @@ public class Main {
 
         Inventory inventory = new Inventory();
 
-        Item item1 = new Item("Apples", 20);
-        Item item2 = new Item("Sword", 2);
+        Item item = new Item("Generic Item", 10);
+        Fruit fruit = new Fruit("Fuji", 20, "Apple");
+        Weapon weapon = new Weapon("Sword", 2, 75, "Melee");
 
-        inventory.addItem(item1);
-        inventory.addItem(item2);
+        inventory.addItem(item);
+        inventory.addItem(fruit);
+        inventory.addItem(weapon);
 
         inventory.displayInventory();
     }
